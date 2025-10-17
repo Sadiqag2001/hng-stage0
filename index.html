@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Profile Card</title>
 </head>
 <body>
-    <h1>Hello Old friend</h1>
+    <article>
+        <div class="profile-card" data-testid="test-profile-card">
+            <header class="profile-header">
+                <figure class="img-figure">
+                    <img src="https://i.postimg.cc/T24PB1nz/f085e3a8-1072-40fc-bccd-b1ff7674cc1d.png" class="profile-image" data-testid="test-user-avatar" alt="Profile Picture">
+                </figure>
+                <div class="profile-detail">
+                    <h2 class="profile-name" data-testid="test-user-name">Abubakar Ado Garba</h2>
+                    <p data-testid="test-user-bio">Computer Engineer | Web Developer | IT Speciaist | Environmental Enthusiast | Nephophile</p>
+                    <p data-testid="test-user-time">Time: </p>
+                </div>
+            </header>
+            <ul data-testid="test-user-social-links">
+                <li><a href="https://x.com/immaletgo" data-testid="test-user-social-twitter" target="_blank">Twitter (X)</a></li>
+                <li><a href="https://instagram.com/sad33q_ag" data-testid="test-user-social-instagram" target="_blank">Instagram</a></li>
+                <li><a href="https://github.com/Sadiqag2001" data-testid="test-user-social-github" target="_blank">Github</a></li>
+                <li><a href="mailto:abubakaradogarba@gmail.com" data-testid="test-user-social-gmail" target="_blank">Mail</a></li>
+                <li><a  href="https://www.linkedin.com/in/abubakar-ado-garba-006255314" data-testid="test-user-social-linkedin" target="_blank">Number</a></li>
+            </ul>
+            <section data-testid="test-user-hobbies">
+                <h2 data-testid="test-user-hobbies">Hobbies</h2>
+                <ul data-testid="test-user-hobbies">
+                    <li data-testid="test-user-hobbies">Billiards</li>
+                    <li data-testid="test-user-hobbies">Watching Movies</li>
+                    <li data-testid="test-user-hobbies">Reading Books</li>
+                    <li data-testid="test-user-hobbies">Building Websites</li>
+                    <li data-testid="test-user-hobbies">Swimming</li>
+
+                </ul>
+
+            </section>
+            <section data-testid="test-user-dislikes">
+                <h2 data-testid="test-user-dislikes">Dislikes</h2>
+                <ul data-testid="test-user-dislikes">
+                    <li data-testid="test-user-dislikes">Snakes</li>
+                    <li data-testid="test-user-dislikes">Low budget movies</li>
+                    <li data-testid="test-user-dislikes">Loud conversations</li>
+                    <li data-testid="test-user-dislikes">Bad Music</li>
+                </ul>
+
+            </section>
+        </div>
+    </article>
 </body>
 </html>

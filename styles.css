@@ -26,7 +26,7 @@ article{
     background-color: #F5F5F0;
     border-radius: 1rem;
     padding: 1rem;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .profile-image{
     width: 50%;
@@ -89,6 +89,13 @@ article{
     color: #F5F5F0;
     background-color: #4A628A;
 }
+.social-links li a:focus,
+a:focus-visible {
+  outline: 1px dotted #4A628A; 
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 .sections{
     display: flex;
     flex-direction: row;
@@ -120,6 +127,70 @@ article{
     font-size: 0.8rem;
     
 }
-@media screen {
+@media only screen and (max-width: 768px) {
+    .profile-card {
+        max-width: 700px;
+    }
+    .profile-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .img-figure{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .profile-card {
+        max-width: 300px;
+    }
     
+    .social-links{
+        gap: 0.3rem;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+    .social-links li a{
+        font-size: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .profile-detail h2{
+        font-size: 1rem;
+    }
+    .profile-detail p{
+        font-size: 0.5rem;
+    }
+    .contact h2{
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+
+    }
+    .hobbies h2{
+        font-size: 1rem;
+    }
+    .hobbies ul li{
+        font-size: 0.5rem;
+        
+    }
+    .dislikes h2{
+        font-size: 1rem;
+    }
+    .dislikes ul li{
+        font-size: 0.5rem;
+    }
 }

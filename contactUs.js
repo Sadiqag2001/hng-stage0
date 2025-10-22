@@ -25,7 +25,7 @@
     valid = false;
   }
 
-  if (message.value.trim() === "") {
+  if (message.value.trim().length < 10) {
     messageError.classList.remove("hidden");
     valid = false;
   }
